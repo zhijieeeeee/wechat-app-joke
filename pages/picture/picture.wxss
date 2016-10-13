@@ -1,0 +1,17 @@
+.item-view{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+}
+
+.item-view image{
+    width: 100%;
+    height: 400rpx;
+    margin-top: 10px;
+}
+
+.item-view .date{
+    color: grey;
+    margin-top: 10px;
+}

@@ -1,0 +1,11 @@
+<scroll-view scroll-y="true" class="page-body" bindscrolltolower="loadMore">
+    <view class="item-view" wx:for="{{picList}}">
+        <text class="content">{{item.content}}</text>
+        <image src="{{item.url}}" mode="aspectFit" catchtap="preview" data-url="{{item.url}}"/>
+        <text class="date">{{item.updatetime}}</text>
+    </view>
+</scroll-view>
+
+<loading hidden="{{loadingHide}}">
+    加载中...
+</loading>
