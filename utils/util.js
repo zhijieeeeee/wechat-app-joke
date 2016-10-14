@@ -13,9 +13,6 @@ function request( url, page, success, fail ) {
       page: page,
       pagesize: app.globalData.pagesize
     },
-    header: {
-      'Content-Type': 'application/json'
-    },
     success: function( res ) {
       if( res.data.error_code == 0 ) {
         success( res.data )

@@ -28,6 +28,26 @@ Page( {
   },
 
   /**
+   * 下拉刷新
+   */
+  onPullDownRefresh() {
+    // var that = this
+    // this.setData( {
+    //   page: 1,
+    //   jokeList:[]
+    // })
+    // http.request( url, this.data.page, function( dataJson ) {
+    //   that.setData( {
+    //     jokeList: that.data.jokeList.concat( dataJson.result.data )
+    //   })
+    //   wx.stopPullDownRefresh()
+    // }, function( reason ) {
+    //   console.log( reason )
+    //   wx.stopPullDownRefresh()
+    // })
+  },
+
+  /**
    * 滑动到底部加载更多
    */
   loadMore() {

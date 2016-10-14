@@ -2,6 +2,7 @@
   "pages":[
     "pages/joke/joke",
     "pages/picture/picture",
+    "pages/about/about",
     "pages/index/index"
   ],
   "window":{
@@ -28,6 +29,12 @@
         "text": "趣图",
         "iconPath": "image/ic_gif_gray.png",
         "selectedIconPath": "image/ic_gif_blue.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "image/ic_about_gray.png",
+        "selectedIconPath": "image/ic_about_blue.png"
       }
       
     ]

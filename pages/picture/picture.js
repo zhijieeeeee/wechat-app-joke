@@ -5,6 +5,7 @@ Page( {
   data: {
     page: 1,
     loadingHide: false,
+    hideFooter: true,
     picList: []
   },
   onLoad: function( options ) {
@@ -30,15 +31,19 @@ Page( {
   loadMore() {
     //请求笑话列表
     var that = this
+    //显示footer
+    this.setData( {
+      hideFooter: !this.data.hideFooter
+    })
     http.request( url, ++this.data.page, function( dataJson ) {
       that.setData( {
         picList: that.data.picList.concat( dataJson.result.data ),
-
+        hideFooter: !that.data.hideFooter
       })
     }, function( reason ) {
       console.log( reason )
       that.setData( {
-
+        hideFooter: !that.data.hideFooter
       })
     })
   },

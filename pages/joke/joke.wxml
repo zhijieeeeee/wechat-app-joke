@@ -1,12 +1,8 @@
-<scroll-view scroll-y="true" class="page-body" bindscrolltolower="loadMore">
-    <view class="item-view" wx:for="{{jokeList}}">
-        <text class="content">{{item.content}}</text>
-        <text class="date">{{item.updatetime}}</text>
-    </view>
-    <view class="loading-view" hidden="{{hideFooter}}">
-        <image src="../../image/loading.gif" style="height:26px;width:26px"/>
-        <text style="font-size:20px">正在加载</text>
-    </view>
+<import src="../common/common.wxml"/>
+
+<scroll-view scroll-y="true" class="page-body" bindscrolltolower="loadMore" lower-threshold="100">
+    <template is="jokeItem" data="{{item}}" wx:for="{{jokeList}}"/>
+    <template is="loadindFooter" data="{{hideFooter}}"/>
 </scroll-view>
 
 <loading hidden="{{loadingHide}}">
