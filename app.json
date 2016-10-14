@@ -2,8 +2,7 @@
   "pages":[
     "pages/joke/joke",
     "pages/picture/picture",
-    "pages/about/about",
-    "pages/index/index"
+    "pages/about/about"
   ],
   "window":{
     "backgroundTextStyle":"light",
