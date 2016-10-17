@@ -29,7 +29,11 @@ page{
     padding: 10px;
     display: flex;
     flex-direction: column;
-    border-bottom: 1px solid gray;
+    border-top: 1px solid #DEDEDE;
+    border-left: 1px solid #DEDEDE;
+    box-shadow: 2px 2px 2px #C7C7C7;
+    margin: 10px;
+    border-radius: 5px;
 }
 
 .item-view .content{
