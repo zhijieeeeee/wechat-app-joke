@@ -1,6 +1,6 @@
 <view class="container">
     <image src="http://o7iblkvul.bkt.clouddn.com/cover.png" ></image>
-    <text class="about">I am an Android developer,but also interested in other technology. </text>
+    <!-- <text class="about">I am an Android developer,but also interested in other technology. </text> -->
 
     <view class="website">
         <view class="item">
