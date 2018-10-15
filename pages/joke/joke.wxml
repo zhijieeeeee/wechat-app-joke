@@ -1,7 +1,7 @@
 <import src="../common/common.wxml"/>
 
 <scroll-view scroll-y="true" class="page-body" bindscrolltolower="loadMore" lower-threshold="100">
-    <template is="jokeItem" data="{{item}}" wx:for="{{jokeList}}"/>
+    <template is="jokeItem" data="{{item}}" wx:for="{{jokeList}}" wx:key="*this"/>
     <template is="loadindFooter" data="{{hideFooter}}"/>
 </scroll-view>
 
